@@ -9,9 +9,11 @@ entity {{cookiecutter.project_name}}_tb is
 end {{cookiecutter.project_name}}_tb;
 
 architecture behavior of {{cookiecutter.project_name}}_tb is
-	component {{cookiecutter.project_name}} is 
+    component {{cookiecutter.project_name}} is 
     	
     end component;
+		
+    signal clk: std_logic := '0';
     
 begin
     {{cookiecutter.project_name}}_component: {{cookiecutter.project_name}} port map (
